@@ -2,18 +2,17 @@
 
 namespace App\Controller;
 
-use App\Form\ResetPasswordFormTypeForm;
-use DateTimeImmutable;
 use App\Repository\UserRepository;
+use App\Form\ResetPasswordTypeForm;
 use App\Service\PasswordResetService;
-use Symfony\Component\HttpFoundation\Request;
-use App\Form\ResetPasswordRequestFormTypeForm;
 use Doctrine\ORM\EntityManagerInterface;
+use App\Form\ResetPasswordRequestTypeForm;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
 class SecurityController extends AbstractController
 {
@@ -41,7 +40,7 @@ class SecurityController extends AbstractController
     #[Route('/forgot-password', name: 'app_forgot_pw')]
     public function forgotPw(Request $request, UserRepository $userRepository, PasswordResetService $passwordResetService): Response
     {
-        $form = $this->createForm(ResetPasswordRequestFormTypeForm::class);
+        $form = $this->createForm(ResetPasswordRequestTypeForm::class);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -83,7 +82,7 @@ class SecurityController extends AbstractController
         }
 
         // On modifie le mot de passe
-        $form = $this->createForm(ResetPasswordFormTypeForm::class);
+        $form = $this->createForm(ResetPasswordTypeForm::class);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
