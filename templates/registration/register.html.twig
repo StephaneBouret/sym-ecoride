@@ -14,14 +14,14 @@
 					<h1 class="text-center mb-4 fs-4">S'inscrire à l'application</h1>
 					{{ form_errors(registrationForm) }}
 
-					{{ form_start(registrationForm) }}
+					{{ form_start(registrationForm, {'attr': {'id': 'registration_type_form'}}) }}
 					<div class="row">
 						<div class="col-md-6">
 							{{ form_row(registrationForm.email, {'attr': {'class': 'form-control-login'}}) }}
 						</div>
 						<div class="col-md-6">
 							{{ form_row(registrationForm.plainPassword, {'attr': {'class': 'form-control-login'}}) }}
-							{# {% include "partials/_entropy.html.twig" %} #}
+							{% include "partials/_entropy.html.twig" %}
 						</div>
 					</div>
 					<div class="row">
@@ -39,8 +39,8 @@
 						<div
 							class="col-md-6">
 							{{ form_row(registrationForm.adress, {'attr': {'class': 'form-control-login'}}) }}
-							{{ form_row(registrationForm.postalCode, {'attr': {'class': 'form-control-login'}}) }}
-							{{ form_row(registrationForm.city, {'attr': {'class': 'form-control-login'}}) }}
+														{{ form_row(registrationForm.postalCode, {'attr': {'class': 'form-control-login'}}) }}
+														{{ form_row(registrationForm.city, {'attr': {'class': 'form-control-login'}}) }}
 							{# <gmpx-api-loader key="{{ google_api_key }}" solution-channel="GMP_QB_addressselection_v3_cAC"></gmpx-api-loader>
 							{{ form_row(registrationForm.adress, {'attr': {'class': 'form-control-login'}}) }}
 							<div id="additional-fields" style="display: none;">
@@ -50,12 +50,12 @@
 						</div>
 					</div>
 					<div class="text-center mt-4">
-						{# <span class="text-muted d-flex">
+						<span class="text-muted d-flex">
 							{{ form_row(registrationForm.agreeTerms, {
-								label : 'En m\'inscrivant à ce site, j\'accepte les <a href="'~path('app_privacy')~'">conditions générales d\'utilisation</a>',
+								label : 'En m\'inscrivant à ce site, j\'accepte les <a href="'~path('app_home')~'">conditions générales d\'utilisation</a>',
 								label_html: true
 							}) }}
-						</span> #}
+						</span>
 					</div>
                     <button id="submit-button" type="submit" class="btn btn-md btn-dark" disabled>
 						<span>S'enregistrer</span>
@@ -67,6 +67,6 @@
 			</div>
 		{% endblock %}
 
-		{# {% block importmap %}
-			{{ importmap(['app', 'register', 'location']) }}
-		{% endblock %} #}
+		{% block importmap %}
+			{{ importmap(['app', 'register']) }}
+		{% endblock %}

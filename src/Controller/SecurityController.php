@@ -11,11 +11,15 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
 class SecurityController extends AbstractController
 {
+    public function __construct(protected RequestStack $requestStack)
+    {}
+
     #[Route(path: '/login', name: 'app_login')]
     public function login(AuthenticationUtils $authenticationUtils): Response
     {
@@ -94,5 +98,19 @@ class SecurityController extends AbstractController
         return $this->render('security/reset_password.html.twig', [
             'passForm' => $form
         ]);
+    }
+
+    #[Route(path: '/login/success', name: 'app_login_success')]
+    public function loginSuccess(): Response
+    {
+        $session = $this->requestStack->getSession();
+
+        // Récupérer l'URL de redirection stockée
+        $targetPath = $session->get('_security.main.target_path', $this->generateUrl('app_home'));
+
+        // Supprimer la valeur de la session pour éviter une redirection non voulue plus tard
+        $session->remove('_security.main.target_path');
+
+        return $this->redirect($targetPath);
     }
 }
