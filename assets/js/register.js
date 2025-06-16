@@ -13,39 +13,39 @@ let pass = false;
 function initializeValidation() {
     // Liste des champs et des fonctions de validation
     const fields = [{
-            id: "#registration_type_form_firstname",
+            id: "#registration_form_firstname",
             handler: checkFirstname
         },
         {
-            id: "#registration_type_form_lastname",
+            id: "#registration_form_lastname",
             handler: checkLastname
         },
         {
-            id: "#registration_type_form_email",
+            id: "#registration_form_email",
             handler: checkEmail
         },
         {
-            id: "#registration_type_form_adress",
+            id: "#registration_form_adress",
             handler: checkAdress
         },
         {
-            id: "#registration_type_form_postalCode",
+            id: "#registration_form_postalCode",
             handler: checkPostalCode
         },
         {
-            id: "#registration_type_form_phone",
+            id: "#registration_form_phone",
             handler: checkPhone
         },
         {
-            id: "#registration_type_form_city",
+            id: "#registration_form_city",
             handler: checkCity
         },
         {
-            id: "#registration_type_form_agreeTerms",
+            id: "#registration_form_agreeTerms",
             handler: checkRgpd
         },
         {
-            id: "#registration_type_form_plainPassword",
+            id: "#registration_form_plainPassword",
             handler: checkPass
         },
     ];
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
         mutations.forEach(mutation => {
             if (mutation.type === "childList") {
                 // Si le formulaire est ajouté ou mis à jour
-                const form = document.querySelector("#registration_type_form");
+                const form = document.querySelector("#registration_form");
                 if (form && mutation.target.contains(form)) {
                     initializeValidation();
                 }

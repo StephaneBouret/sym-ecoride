@@ -17,7 +17,7 @@ use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Validator\Constraints\PasswordStrength;
 
-class RegistrationTypeForm extends AbstractType
+class RegistrationFormType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
@@ -43,9 +43,9 @@ class RegistrationTypeForm extends AbstractType
             ->add('plainPassword', PasswordType::class, [
                 // instead of being set onto the object directly,
                 // this is read and encoded in the controller
-                // 'toggle' => true,
-                // 'hidden_label' => 'Masquer',
-                // 'visible_label' => 'Afficher',
+                'toggle' => true,
+                'hidden_label' => 'Masquer',
+                'visible_label' => 'Afficher',
                 'label' => 'Votre mot de passe :',
                 'label_attr' => [
                     'class' => 'lh-label fw-medium'

@@ -2,11 +2,10 @@
 
 namespace App\Controller;
 
+use App\Form\ResetPasswordFormType;
+use App\Form\ResetPasswordRequestFormType;
 use App\Repository\UserRepository;
-use App\Form\ResetPasswordTypeForm;
 use App\Service\PasswordResetService;
-use Doctrine\ORM\EntityManagerInterface;
-use App\Form\ResetPasswordRequestTypeForm;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
@@ -44,7 +43,7 @@ class SecurityController extends AbstractController
     #[Route('/forgot-password', name: 'app_forgot_pw')]
     public function forgotPw(Request $request, UserRepository $userRepository, PasswordResetService $passwordResetService): Response
     {
-        $form = $this->createForm(ResetPasswordRequestTypeForm::class);
+        $form = $this->createForm(ResetPasswordRequestFormType::class);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -68,7 +67,7 @@ class SecurityController extends AbstractController
     }
 
     #[Route('/forgot-password/{token}', name: 'app_reset_pw')]
-    public function resetPw($token, Request $request, UserRepository $userRepository, EntityManagerInterface $em, UserPasswordHasherInterface $hasher, PasswordResetService $passwordResetService): Response
+    public function resetPw($token, Request $request, UserRepository $userRepository, UserPasswordHasherInterface $hasher, PasswordResetService $passwordResetService): Response
     {
         // On vérifie si on a ce token dans la bdd
         $user = $passwordResetService->getUserByResetToken($token, $userRepository);
@@ -86,7 +85,7 @@ class SecurityController extends AbstractController
         }
 
         // On modifie le mot de passe
-        $form = $this->createForm(ResetPasswordTypeForm::class);
+        $form = $this->createForm(ResetPasswordFormType::class);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {

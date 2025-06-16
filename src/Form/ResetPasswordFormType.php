@@ -9,7 +9,7 @@ use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\Validator\Constraints\PasswordStrength;
 
-class ResetPasswordTypeForm extends AbstractType
+class ResetPasswordFormType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
@@ -20,7 +20,7 @@ class ResetPasswordTypeForm extends AbstractType
                 'invalid_message' => 'Le mot de passe et la confirmation doivent être identiques',
                 'mapped' => false,
                 'attr' => [
-                    // 'autocomplete' => 'new-password',
+                    'autocomplete' => 'new-password',
                     'placeholder' => 'Merci de saisir votre mot de passe'
                 ],
                 'constraints' => [
@@ -30,9 +30,9 @@ class ResetPasswordTypeForm extends AbstractType
                     )
                 ],
                 'first_options' => [
-                    // 'toggle' => true,
-                    // 'hidden_label' => 'Masquer',
-                    // 'visible_label' => 'Afficher',
+                    'toggle' => true,
+                    'hidden_label' => 'Masquer',
+                    'visible_label' => 'Afficher',
                     'label' => 'Votre mot de passe :',
                     'label_attr' => [
                         'class' => 'lh-label fw-bold form-label'
