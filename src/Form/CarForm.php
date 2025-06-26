@@ -7,6 +7,7 @@ use App\Form\DataTransformer\ModelToIdTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -52,9 +53,7 @@ class CarForm extends AbstractType
                 'label' => 'Marque',
                 'attr' => ['data-model-loader-target' => 'brand'],
             ])
-            ->add('model', ChoiceType::class, [
-                'label' => 'Modèle',
-                'choices' => [],
+            ->add('model', HiddenType::class, [
                 'attr' => ['data-model-loader-target' => 'model'],
             ])
         ;
