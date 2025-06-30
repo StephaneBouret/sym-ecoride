@@ -1920,22 +1920,34 @@ input.input100 {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    -webkit-padding-before: 12px;
     padding-block-start: 12px;
+    -webkit-padding-after: 16px;
     padding-block-end: 16px;
+    -webkit-padding-start: 0px;
     padding-inline-start: 0px;
+    -webkit-padding-end: 0px;
     padding-inline-end: 0px;
+    -webkit-margin-before: 0;
     margin-block-start: 0;
+    -webkit-margin-after: 0;
     margin-block-end: 0;
+    -webkit-margin-start: 0;
     margin-inline-start: 0;
+    -webkit-margin-end: 0;
     margin-inline-end: 0;
     width: 100%;
 }
 
 @media (min-width: 800px) {
     .h06k9w {
+        -webkit-padding-start: 24px;
         padding-inline-start: 24px;
+        -webkit-padding-end: 24px;
         padding-inline-end: 24px;
+        -webkit-padding-after: 16px;
         padding-block-end: 16px;
+        -webkit-padding-before: 16px;
         padding-block-start: 16px;
         justify-content: center;
         text-align: center;
@@ -1956,9 +1968,13 @@ input.input100 {
 
 .xyo4ps {
     width: 100%;
+    -webkit-padding-end: 0;
     padding-inline-end: 0;
+    -webkit-padding-start: 0;
     padding-inline-start: 0;
+    -webkit-padding-after: 8px;
     padding-block-end: 8px;
+    -webkit-padding-before: 8px;
     padding-block-start: 8px;
 }
 
@@ -1985,6 +2001,439 @@ input.input100 {
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+/*--------------------------------------------------------------
+# COVOITURAGE - DRIVER
+--------------------------------------------------------------*/
+.q3rtro {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+    gap: 16px;
+    -webkit-padding-before: 16px;
+    padding-block-start: 16px;
+    -webkit-padding-after: 16px;
+    padding-block-end: 16px;
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+}
+
+.w023w1 {
+    background-color: #f6f8f9;
+    border-radius: 16px;
+    outline: 2px solid transparent;
+    outline-offset: calc(-1 * 2px);
+    text-align: left;
+    width: 100%;
+    transition: outline .2s ease-out;
+    display: block;
+    box-shadow: 0 1px 8px #00000014;
+    text-decoration: none;
+}
+
+.w023w1:hover {
+    outline: 2px solid #054652;
+}
+
+.his1ay {
+    font: 500 22px / 24px 'AirbnbCereal', 'Helvetica Neue', sans-serif;
+    color: #054652;
+    -webkit-padding-before: 12px;
+    padding-block-start: 12px;
+    -webkit-padding-after: 0;
+    padding-block-end: 0;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 800px) {
+    .his1ay {
+        -webkit-padding-before: 16px;
+        padding-block-start: 16px;
+        -webkit-padding-after: 0;
+        padding-block-end: 0;
+        -webkit-padding-start: 24px;
+        padding-inline-start: 24px;
+        -webkit-padding-end: 24px;
+        padding-inline-end: 24px;
+    }
+}
+
+.idzcua {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    -webkit-padding-before: 12px;
+    padding-block-start: 12px;
+    -webkit-padding-after: 12px;
+    padding-block-end: 12px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    .idzcua {
+        -webkit-padding-before: 16px;
+        padding-block-start: 16px;
+        -webkit-padding-after: 16px;
+        padding-block-end: 16px;
+        -webkit-padding-start: 24px;
+        padding-inline-start: 24px;
+        -webkit-padding-end: 24px;
+        padding-inline-end: 24px;
+    }
+}
+
+.eapq5x {
+    opacity: 1;
+    display: block;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.tuz74s {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: auto auto 1fr;
+    display: grid;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+@media (min-width: 800px) {
+    .tuz74s {
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 8px;
+        flex-direction: row;
+        flex-grow: 1;
+        width: 100%;
+        display: flex;
+    }
+}
+
+.kd431k {
+    grid-template-columns: 44px 30px 1fr;
+    grid-template-columns: subgrid;
+    grid-column: 1 / span 3;
+    display: grid;
+}
+
+@media (min-width: 800px) {
+    .kd431k {
+        grid-column: unset;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 4px;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 50%;
+        max-width: 250px;
+        display: flex;
+    }
+}
+
+.rp5p6k {
+    flex-direction: column;
+    grid-column: 1 / span 1;
+    display: flex;
+}
+
+@media (min-width: 800px) {
+    .rp5p6k {
+        grid-column: unset;
+        gap: 8px;
+        flex-direction: row;
+        display: flex;
+    }
+
+    .z3ew19 {
+        flex-grow: 1;
+        width: 100%;
+    }
+}
+
+.zvvcw9 {
+    font: 500 16px / 20px 'AirbnbCereal', 'Helvetica Neue', sans-serif;
+    color: #054652;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    margin-bottom: 0;
+}
+
+@media (min-width: 800px) {
+    .zvvcw9 {
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 4px;
+        flex-direction: row;
+        display: flex;
+    }
+}
+
+.sg4oet {
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 0 2px;
+    display: flex;
+    position: relative;
+}
+
+@media (min-width: 800px) {
+    .sg4oet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-width: 140px;
+        max-width: 100%;
+    }
+
+    .sg4oet:before {
+        content: "";
+        border-radius: 9999px;
+        border: 2px solid #054652;
+        background: #fff;
+        width: 10px;
+        height: 10px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    .sg4oet:after {
+        content: "";
+        border-radius: 9999px;
+        border: 2px solid #054652;
+        background: #fff;
+        width: 10px;
+        height: 10px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+.ad9y9q {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+
+.rzbszz {
+    display: none;
+    margin: 0;
+}
+
+.rzbszz:first-child {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0.5rem;
+    margin-inline-end: auto;
+}
+
+@media (min-width: 800px) {
+    .rzbszz {
+        border: none;
+        border-top: 4px solid #054652;
+        border-radius: 9999px;
+        flex-grow: 1;
+        display: block;
+    }
+
+    .rzbszz:first-child {
+        border-radius: 0 9999px 9999px 0;
+    }
+}
+
+.c0nduo {
+    border: 0;
+    margin: 0;
+    gap: 4px;
+    font: 400 14px / 16px 'AirbnbCereal', 'Helvetica Neue', sans-serif;
+    color: #6f8b90;
+    padding: 4px 0;
+    display: inline-flex;
+}
+
+@media (min-width: 800px) {
+    .c0nduo {
+        align-items: center;
+        padding: 0;
+    }
+}
+
+.yguum2 {
+    margin-bottom: 4px;
+    flex-direction: column;
+    grid-column: 3 / span 1;
+    min-width: 0;
+    display: flex;
+}
+
+.yguum2:first-child .c1gqdu3 {
+    margin-bottom: 8px;
+}
+
+@media (min-width: 800px) {
+    .yguum2 {
+        grid-column: unset;
+    }
+
+    .yguum2:first-child .c1gqdu3 {
+        margin-bottom: 4px;
+    }
+}
+
+.dzgwho {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    font: 500 16px / 20px 'AirbnbCereal', 'Helvetica Neue', sans-serif;
+    color: var(--_1gzv7bh6);
+    text-overflow: ellipsis;
+    line-clamp: 2;
+    color: #054652;
+    text-overflow: ellipsis;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.augxu8 {
+    margin-right: 24px;
+}
+
+.b8q1qi {
+    flex-direction: column;
+    grid-column: 1 / span 1;
+    display: flex;
+}
+
+@media (min-width: 800px) {
+    .b8q1qi {
+        grid-column: unset;
+        gap: 8px;
+        flex-direction: row;
+        display: flex;
+    }
+}
+
+.ukp43u {
+    padding: 0 8px;
+    flex-direction: column;
+    grid-column: 2 / span 1;
+    display: flex;
+}
+
+@media (min-width: 800px) {
+    .ukp43u {
+        display: none;
+    }
+}
+
+.jjf7u2 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    flex-direction: column;
+    flex-grow: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.jjf7u2:after {
+    content: "";
+    border-radius: 9999px;
+    border: 2px solid #054652;
+    box-sizing: content-box;
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    display: block;
+}
+
+.x3od9x {
+    width: 4px;
+    min-height: 4px;
+    background-color: #054652;
+    border-radius: 9999px;
+    border: none;
+    flex-grow: 1;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.x3od9x:first-child {
+    border-radius: 0 0 9999px 9999px;
+}
+
+.x3od9x:last-child {
+    border-radius: 9999px 9999px 0 0;
+}
+
+.x3od9x:first-child:last-child {
+    border-radius: 0;
+}
+
+.umbtue {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 4px;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.umbtue:before {
+    content: "";
+    border-radius: 9999px;
+    border: 2px solid #054652;
+    box-sizing: content-box;
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    display: block;
 }
 
 /*--------------------------------------------------------------
