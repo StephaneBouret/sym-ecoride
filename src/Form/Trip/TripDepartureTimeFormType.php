@@ -12,7 +12,7 @@ class TripDepartureTimeFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder->add('departureTime', TimeType::class, [
-            'label' => 'À quelle heure partez-vous ?',
+            'label' => false,
             'widget' => 'single_text',
             'input' => 'datetime_immutable',
             'html5' => true,

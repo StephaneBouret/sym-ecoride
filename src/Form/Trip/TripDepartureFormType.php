@@ -14,7 +14,7 @@ class TripDepartureFormType extends AbstractType
     {
         $builder
             ->add('departureAddress', TextType::class, [
-                'label' => 'D\'où partez-vous ?',
+                'label' => false,
                 'attr' => [
                     'data-address-formatter-target' => 'input',
                     'autocomplete' => 'off',

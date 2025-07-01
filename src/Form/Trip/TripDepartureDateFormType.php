@@ -12,7 +12,7 @@ class TripDepartureDateFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder->add('departureDate', DateType::class, [
-            'label' => 'Quand partez-vous ?',
+            'label' => false,
             'widget' => 'single_text',
             'html5' => true,
             'constraints' => [

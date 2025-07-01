@@ -13,7 +13,7 @@ class TripArrivalFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder->add('arrivalAddress', TextType::class, [
-            'label' => 'Où allez-vous ?',
+            'label' => false,
             'attr' => [
                 'data-address-formatter-target' => 'input',
                 'autocomplete' => 'off',
