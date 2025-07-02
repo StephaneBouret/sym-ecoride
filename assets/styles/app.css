@@ -139,6 +139,12 @@ body {
     object-fit: cover;
 }
 
+.pjdcjh {
+    min-width: 0px;
+    color: rgb(25, 135, 84) !important;
+    font-weight: 700 !important;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -2256,9 +2262,13 @@ input.input100 {
 }
 
 .rzbszz:first-child {
+    -webkit-margin-before: 0.5em;
     margin-block-start: 0.5em;
+    -webkit-margin-after: 0.5em;
     margin-block-end: 0.5em;
+    -webkit-margin-start: 0.5rem;
     margin-inline-start: 0.5rem;
+    -webkit-margin-end: auto;
     margin-inline-end: auto;
 }
 
@@ -2434,6 +2444,122 @@ input.input100 {
     width: 6px;
     height: 6px;
     display: block;
+}
+
+/*--------------------------------------------------------------
+# Search Trip - Rechercher un trajet
+--------------------------------------------------------------*/
+.ygs0yx {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 56px);
+    justify-content: space-between;
+}
+
+@media (min-width: 800px) {
+    .ygs0yx {
+        justify-content: flex-start;
+    }
+}
+
+.ywaehf {
+    color: #054652;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    -webkit-padding-before: 12px;
+    padding-block-start: 12px;
+    -webkit-padding-after: 16px;
+    padding-block-end: 16px;
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    -webkit-margin-before: 0;
+    margin-block-start: 0;
+    -webkit-margin-after: 0;
+    margin-block-end: 0;
+    -webkit-margin-start: 0;
+    margin-inline-start: 0;
+    -webkit-margin-end: 0;
+    margin-inline-end: 0;
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    .ywaehf {
+        justify-content: center;
+        text-align: center;
+        -webkit-padding-before: 16px;
+        padding-block-start: 16px;
+        -webkit-padding-after: 16px;
+        padding-block-end: 16px;
+        -webkit-padding-start: 24px;
+        padding-inline-start: 24px;
+        -webkit-padding-end: 24px;
+        padding-inline-end: 24px;
+    }
+}
+
+.pztveq {
+    font: 500 30px / 32px 'AirbnbCereal', 'Helvetica Neue', sans-serif;
+    white-space: pre-line;
+}
+
+@media (min-width: 800px) {
+    .pztveq {
+        font: 500 40px / 42px 'AirbnbCereal', 'Helvetica Neue', sans-serif;
+    }
+}
+
+.a909r8 {
+    min-height: calc(100vh - 56px);
+    width: 100%;
+    max-width: 1272px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+@media (min-width: 800px) {
+    .a909r8 {
+        min-height: calc(100vh - 72px);
+    }
+}
+
+.vs3pdd {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+    gap: 12px;
+    -webkit-padding-before: 0;
+    padding-block-start: 0;
+    -webkit-padding-after: 0;
+    padding-block-end: 0;
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+}
+
+@media (min-width: 800px) {
+    .vs3pdd {
+        gap: 24px;
+    }
+}
+
+.ts-control .item {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /*--------------------------------------------------------------
