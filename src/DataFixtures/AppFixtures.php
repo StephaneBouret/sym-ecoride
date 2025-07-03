@@ -38,6 +38,7 @@ class AppFixtures extends Fixture implements FixtureGroupInterface
             ->setAdress($faker->streetAddress())
             ->setPostalCode($faker->postcode())
             ->setCity($faker->city())
+            ->setPseudo('admin')
             // ->setPhone($faker->phoneNumber())
             ->setPhone($adminPhoneNumberObject)
             ->setEmail("admin@gmail.com")
@@ -61,6 +62,7 @@ class AppFixtures extends Fixture implements FixtureGroupInterface
                 ->setAdress($faker->streetAddress())
                 ->setPostalCode($faker->postcode())
                 ->setCity($faker->city())
+                ->setPseudo($faker->unique()->userName() . $u)
                 // ->setPhone($faker->phoneNumber())
                 ->setPhone($phoneNumberObject)
                 ->setPassword($hash);

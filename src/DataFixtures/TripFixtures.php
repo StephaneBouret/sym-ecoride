@@ -23,7 +23,7 @@ class TripFixtures extends Fixture implements FixtureGroupInterface
         $users = $manager->getRepository(User::class)->findAll();
 
         if (empty($users)) {
-            throw new \RuntimeException('Aucun utilisateur trouvé. Charge les UserFixtures d\'abord.');
+            throw new \RuntimeException('Aucun utilisateur trouvé. Charge les AppFixtures d\'abord.');
         }
 
         foreach ($users as $user) {
