@@ -34,6 +34,8 @@ final class RegistrationController extends AbstractController
             // Transformer le prénom et le nom
             $user->setFirstname(ucfirst($firstname))
                 ->setLastname(mb_strtoupper($lastname));
+            
+            $user->setCredit(20);
 
             $user->setAvatar($avatarService->createAndAssignAvatar($user));
 
