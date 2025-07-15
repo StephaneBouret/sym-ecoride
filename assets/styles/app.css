@@ -5020,6 +5020,26 @@ button.bThDHv {
     margin-left: 16px;
 }
 
+.yzflyz {
+    color: #5f7c81;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+    padding-block-start: 12px;
+    padding-block-end: 12px;
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+}
+
+.rix1x3 {
+    font: 400 16px / 20px 'AirbnbCereal', 'Helvetica Neue', sans-serif;
+    word-break: break-word;
+    white-space: pre-line;
+}
+
 /*--------------------------------------------------------------
 # Root
 --------------------------------------------------------------*/
