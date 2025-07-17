@@ -17,7 +17,7 @@ class TripArrivalFormType extends AbstractType
             'attr' => [
                 'data-address-formatter-target' => 'input',
                 'autocomplete' => 'off',
-                'placeholder' => 'Saisissez l\'adresse précise',
+                'placeholder' => '12 rue Victor Hugo, 75001 Paris',
             ],
             'constraints' => [
                 new NotBlank(['message' => 'Veuillez saisir une adresse de départ']),
