@@ -3064,7 +3064,7 @@ button.bThDHv {
 }
 
 .fgfump {
-    min-height: 354px;
+    min-height: 378px;
 }
 
 .sjlkpn {
@@ -5118,9 +5118,13 @@ button.bThDHv {
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
+    -webkit-padding-before: 8px;
     padding-block-start: 8px;
+    -webkit-padding-after: 8px;
     padding-block-end: 8px;
+    -webkit-padding-start: 24px;
     padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
     padding-inline-end: 24px;
 }
 
@@ -5458,6 +5462,134 @@ button.bThDHv {
 .i5cdxym {
     background-color: var(--linaria-theme_palette-hof) !important;
     height: 100%;
+}
+
+.fqis5s {
+    min-height: 839px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 800px) {
+    .fqis5s {
+        justify-content: flex-start;
+    }
+}
+
+.rt6iz6 {
+    flex-grow: 1;
+}
+
+.v4bp0l {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.v4bp0l {
+    position: relative;
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    align-items: center;
+    flex: 1 1 0%;
+    border: 0px;
+    background: none;
+}
+
+.cwp2rx {
+    width: 100%;
+    display: flex;
+}
+
+@media (min-width: 800px) {
+    .cwp2rx {
+        padding: calc(4px / 2);
+    }
+}
+
+.cjmeit {
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 0;
+    flex-direction: row;
+    display: flex;
+}
+
+@media (min-width: 800px) {
+    .cjmeit {
+        border-radius: 16px;
+    }
+}
+
+.zmk3k1 {
+    flex-shrink: 0;
+}
+
+.kimxj8 {
+    box-sizing: border-box;
+    border-radius: 9999px;
+    height: 48px;
+    width: 48px;
+    background-color: #dedede;
+    flex-shrink: 0;
+    display: flex;
+    position: relative;
+}
+
+.p88o4h {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+}
+
+.lesxnl {
+    padding: 12px 0;
+    margin: 0px;
+    display: flex;
+    flex-flow: column;
+    gap: 12px;
+}
+
+.scdlkj {
+    display: flex;
+    flex-flow: column;
+    gap: 4px;
+}
+
+.lewpe8 {
+    font: 500 16px / 20px 'AirbnbCereal', 'Helvetica Neue', sans-serif;
+    margin-bottom: 0;
+}
+
+.yyoraa {
+    color: #5f7c81;
+    font: 400 16px / 20px 'AirbnbCereal', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.gt2w2q {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.y1j3ri {
+    -webkit-padding-before: 8px;
+    padding-block-start: 8px;
+    -webkit-padding-after: 8px;
+    padding-block-end: 8px;
+    width: 100%;
 }
 
 /*--------------------------------------------------------------
